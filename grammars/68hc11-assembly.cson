@@ -1,0 +1,38 @@
+# If this is your first time writing a language grammar, check out:
+#   - http://manual.macromates.com/en/language_grammars
+
+'scopeName': 'source.68hc11-assembly'
+'name': '68HC11 Assembly'
+'fileTypes': [
+  's07'
+]
+'patterns': [
+  {
+    'match': '(\\t;.*)'
+    'name': 'comment.line.68hc11-assembly'
+  },
+  {
+    'match': '((?!;).*:(?![^\\t]))'
+    'name': 'entity.name.function.68hc11-assembly'
+  },
+  {
+    'match': '\\b(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))\\b'
+    'name': 'constant.numeric.real.68hc11-assembly'
+  },
+  {
+    'match': '[#$]+[0-9a-fA-F_]+'
+    'name': 'constant.numeric.hexadecimal.68hc11-assembly'
+  },
+  {
+    'match': '(?i)\\t\\b(ABA|ABX|ABY|ADCA|ADCB|ADDA|ADDB|ADDD|ANDA|ANDB|ASL|ASLA|ASLB|ASLD|ASR|ASRA|ASRB|BCLR|BITA|BITB|BSET|CBA|CLC|CLI|CLR|CLRA|CLRB|CLV|CMPA|CMPB|COM|COMA|COMB|CPD|CPX|CPY|DAA|DEC|DECA|DECB|DES|DEX|DEY|EORA|EORB|FDIB|IDIV|INC|INCA|INCB|INS|INX|INY|LDAA|LDAB|LDD|LDS|LDX|LDY|LSL|LSLA|LSLB|LSLD|LSR|LSRA|LSRB|LSRD|MUL|NEG|NEGA|NEGB|ORAA|ORAB|PSHA|PSHB|PSHX|PSHY|PULA|PULB|PULX|PULY|ROL|ROLA|ROLB|ROR|RORA|RORB|SBA|SBCA|SBCB|SEC|SEI|SEV|STAA|STAB|STD|STOP|STS|STX|STY|SUBA|SUBB|SUBD|SWI|TAB|TAP|TBA|TEST|TPA|TST|TSTA|TSTB|TSX|TSY|TXS|TYS|WAI|XGDX|XGDY)\\b'
+    'name': 'keyword.instruction.68hc11-assembly'
+  },
+  {
+    'match': '(?i)\\t\\b(BCS|BEQ|BGE|BGT|BHI|BHS|BLE|BLO|BLS|BLT|BMI|BNE|BPL|BRA|BRCLR|BRN|BRSET|BSR|BVC|BVS|JMP|JSR|RTI|RTS)\\b'
+    'name': 'support.function.jump-or-call.68hc11-assembly'
+  },
+  {
+    'match': '(?i)\\t\\bNOP\\b'
+    'name': 'comment.line.null.68hc11-assembly'
+  }
+]

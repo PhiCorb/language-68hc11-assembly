@@ -1,0 +1,15 @@
+{
+  "name": "language-68hc11-assembly",
+  "version": "0.1.0",
+  "description": "Syntax highlighting for the Freescale 68HC11 assembly instruction set",
+  "keywords": [
+    "language",
+    "grammar"
+  ],
+  "repository": "https://github.com/PhiCorb/language-68hc11-assembly",
+  "license": "MIT",
+  "dependencies": {},
+  "engines": {
+    "atom": "*"
+  }
+}
