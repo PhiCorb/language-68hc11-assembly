@@ -6,7 +6,10 @@
     "language",
     "grammar"
   ],
-  "repository": "https://github.com/PhiCorb/language-68hc11-assembly",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PhiCorb/language-68hc11-assembly.git"
+  },
   "license": "MIT",
   "dependencies": {},
   "engines": {
