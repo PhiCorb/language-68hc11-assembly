@@ -4,3 +4,4 @@
 '.source.68hc11-assembly':
   'editor':
     'commentStart': '; '
+    'tabType': 'hard'
